@@ -1,0 +1,12 @@
+
+The project aims to create a model capable of summarizing input text into a predefined number of lines. 
+
+This model utilizes an extractive method, where it extracts sentences directly from the input text based on their importance. The importance of each sentence is determined by importance scores, which are calculated considering the number of occurrences of the words in the sentence.
+
+The process begins with preprocessing the input text. First, stopwords and punctuations are removed, resulting in cleaner text stored in a separate variable. Then, the number of occurrences of each word is counted and stored in a dictionary. For each sentence, an importance score is defined by summing the importance scores of each word present in the sentence. Before calculating the importance of a sentence, the scores of each word are normalized.
+
+Next, a priority queue is used to find sentences with higher importance scores. These selected sentences are combined to form a paragraph, creating the extractive summary of the input text.
+
+The code for this extractive text summarization model is available in the attached files. 
+
+Thank you.
