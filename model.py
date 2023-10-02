@@ -6,6 +6,7 @@ st.title("Extractive Text Summarizer")
 
 # Preprocessing steps
 text = st.text_area("Enter text:")
+nltk.download('punkt')
 # tokenizing the text into sentence
 if text:
    try:
